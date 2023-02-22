@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Scene6Controller">
+   <children>
+      <Label layoutX="246.0" layoutY="41.0" text="Admin Login">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="flight" layoutX="238.0" layoutY="161.0" mnemonicParsing="false" onAction="#option2" text="Manage Flight">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="admin" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="user" layoutX="238.0" layoutY="200.0" mnemonicParsing="false" onAction="#option2" text="Manage User" toggleGroup="$admin">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </RadioButton>
+   </children>
+</AnchorPane>

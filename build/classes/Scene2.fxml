@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Scene5Controller">
+   <children>
+      <Label fx:id="label" layoutX="245.0" layoutY="53.0" text="Flight Booking">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="radioDomestic" layoutX="238.0" layoutY="140.0" mnemonicParsing="false" onAction="#bookType" text="Domestic Booking">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="booking" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="radioInternational" layoutX="238.0" layoutY="200.0" mnemonicParsing="false" onAction="#bookType" text="International Booking" toggleGroup="$booking">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </RadioButton>
+   </children>
+</AnchorPane>
